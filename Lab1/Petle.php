@@ -32,7 +32,7 @@
 		</p>
 
 		<h2>
-			Zadanie 3.2
+			Zadanie 3.28
 		</h2>
 		<p>
 			Zmodyfikuj funkcję z zadania 1.1, by przyjmowała argument - liczbę rzutów kostką. Izwracała tablicę wyników.
