@@ -17,7 +17,7 @@
 	</select>
 	<input type="number" name="B" value="0">
 	<p>
-		<input type="submit" value="Oblicz">
+		<input type="submit" value="Oblicz" name="DJ">
 	</p>
 	<?php
 	$A=$_POST['A'];
@@ -41,9 +41,9 @@
 			break;
 	}
 	?>
-	<hr>
+	<whr>
 	<h2>Zaawansowany</h2>
-	<input type="text" name="C">
+	<input type="text" name="C"  > 
 	<select name="Advanced">
 		<option value="cos">Cosinus</option>
 		<option value="sin">Sinus</option>
@@ -56,7 +56,7 @@
 		<option value="radToDeg">Radiany na stopnie</option>
 	</select>
 	<p>
-		<input type="submit" value="Oblicz">
+		<input type="submit" value="Oblicz" name="JD">
 	</p>
 	<?php
 		$C=$_POST['C'];
@@ -93,6 +93,10 @@
 				$stopnie=rad2deg($C);
 				echo $radiany."=".$stopnie."<sup>o</sup>";
 				break;
+			if(isset($_POST["JD"]))
+				echo "JD";
+			if(isset($_POST["DJ"]))
+				echo "DJ;";
 		}
 	?>
 </form>
